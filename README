@@ -1,0 +1,17 @@
+The Makefile will auto-detect your OS and work accordingly.  You will need Go
+in your path, as well as the fyne command line tool installed into your path.
+
+https://go.dev/
+https://fyne.io/
+
+On Linux you will need the linuxdeploy appimage in your path or specify where
+it is for making the appimage. See LINUXDEPLOY in the Makefile.  You will
+probably also need a host of libraries installed, but that varies system by
+system.
+
+On Universal Blue-based systems such as Bazzite, create an Ubuntu distrobox and
+build in that. Then you can just keep installing -devel libraries until the
+thing builds.  The appimage you build in the Distrobox will run in your main
+system just fine. At least, it did in my testing.
+
+https://github.com/linuxdeploy/linuxdeploy
